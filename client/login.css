@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200;1,300;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.form-text{
+    /* border:2px solid #444; */
+    padding:30px 80px 10px 80px;
+    width:40rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.butn{
+    display:flex;
+    justify-content: space-between;
+
+}.form{
+    margin-top:10rem;
+}
+.user-text{
+    text-align:center;
+}
