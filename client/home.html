@@ -31,7 +31,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Health</a>
+                    <a class="nav-link" href="#health-section">Health</a>
                   </li>
 
                   <li class="nav-item">
@@ -47,7 +47,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link btn btn-success" href="#">Log in</a>
+                    <a class="nav-link btn btn-success" href="../client/login.html">Log in</a>
                   </li>
                  
                 </ul>
@@ -63,13 +63,14 @@
          <h1>Smart City</h1>
          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt repudiandae culpa in. Ipsam excepturi qui aliquid error hic et fuga quaerat voluptas reiciendis nulla officia nihil voluptatem, eaque sint voluptatum!</p>
          <button class="btn btn-success">Use the Technology</button>
+         <button class="btn btn-danger">Emergency</button>
      </div>
     </div>
 
 
     
 <!-- Health section start -->
-    <div class="container-fluid bg-light health-section">
+    <div class="container-fluid bg-light health-section" id="health-section">
       <h2 class="text-center py-4">Health</h2>
       <div class="container my-3">
           <div class="row my-4">
@@ -128,7 +129,7 @@
                   <div class="doctor-img">
                     <img src="../client/photo/doctor-img.jpeg" class="rounded-circle" alt="Dcotor image">
                   </div>
-                  <h5 class="card-title">Dr. Hari Bastola</h5>
+                  <h5 class="card-title dr-name">Dr. Hari Bastola</h5>
                   <li class="list-unstyled">Consultant Cardiologist</li>
                   <li class="list-unstyled">Email: <span>text@gmail.com</span> </li>
                   <li class="list-unstyled">Experience: <span>More than 12 Years</span> </li>
@@ -191,22 +192,38 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Enter Your Symptoms:</label>
+            <label for="recipient-name" class="col-form-label">Full Name:</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
+            <label for="message-text" class="col-form-label">Phone Number:</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Email Address:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Services Title:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Doctors Code:</label>
+            <input type="text" value="p0897010" readonly  class="form-control" id="recipient-name doctor-code">
+          </div>
+
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Message:</label>
             <textarea class="form-control" id="message-text"></textarea>
           </div>
+         
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
