@@ -1,9 +1,9 @@
 # SmartCity-Hackathon
 
-To make cities smart , smart health system plays vital role.So , we are presenting an website that is related to health  which  will includes the concept of digitalized health services ##
-**currently working on:**
-Authentication and authorization
- sigUp,sigin
+To make cities smart , smart health system plays vital role.So , we are presenting an website that is related to health  which  will includes the concept of digitalized health services  <br>
+**currently working on:**     <br>
+Authentication and authorization<br>
+ sigUp,sigin <br>
 user can book an appointment with doctor
 Only doctors have access to get  all their patients
  
