@@ -2,6 +2,7 @@ const crypto = require('crypto');
 const { promisify } = require('util');
 const jwt = require('jsonwebtoken');
 const User = require('./../models/userModel');
+const Doctor = require('./../models/doctorModel');
 const signToken = require('./../utils/signToken');
 const catchAsync = require('./../utils/catchAsync');
 const AppError = require('./../utils/appError');
@@ -223,3 +224,18 @@ exports.protect = catchAsync(async (req, res, next) => {
     createSendToken(user, 200, res);
   });
   
+
+  //Doctor 
+
+  exports.isDoctor= async(req, res,next)=>{
+      const doctor = await Doctor.findOne({email:req.body.email});
+
+
+      if(doctor.code===!'78dr0098'||doctor.code===!'p0897010'||doctor.code===!'2307ycx0'){
+       
+        return next(new AppError('Only Doctor get access to pataint details'), 400);
+      }
+      
+      next();
+
+  }
