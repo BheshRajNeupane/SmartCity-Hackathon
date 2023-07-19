@@ -15,7 +15,7 @@ Only doctors have access to get  all their patients <br>
 Nodejs,moongoose,Boostrap,html,css<br>
 <br>
 **we will be working on:**<br>
-Telemedicine patient can do text  to doctor and do video call
+Telemedicine patient can do text  to doctor and do video call <br>
 user can get location of nearby hospitals and so on
 
 
