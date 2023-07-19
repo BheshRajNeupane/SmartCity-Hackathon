@@ -29,10 +29,10 @@ exports.bookAppointment= catchAsync(async(req,res,next)=>{
 
          res.status(200).json({
              status:"success",
-            // number:patientDetails.length,
+             number:patientDetails.length,
              data:{
-                 //patientDetails
-                 user
+                 patientDetails
+                 
              }
          })
      
@@ -45,17 +45,8 @@ exports.getAppointments= async(req, res)=>{
     
     const allAppointments = await Appoinment.find()
     
-        if(!allAppointments){
-             res.json({messgae:"No appointments found"})
-        } 
-        else{
-         res.render("../views/Routine/routine.ejs",{
-             
-             AppoinmentData:allAppointments,
-              title:"Appoinments"
-         })
      } 
-     }
+     
 
 
 
@@ -65,57 +56,20 @@ exports.getAppointments= async(req, res)=>{
         const appoinment =  await Appoinment.findById(req.params.id)
   
   
-           if( appoinment== null){
-                res.redirect('http://127.0.0.1:3007/api/v1/routine');
-           } 
-           else{
-            res.render("../views/Routine/edit_period.ejs",{
-                 
-              period:period,
-              title:"Edit Period"
-            })
+          
         } 
   
       
       
-       }
+       
   
   
-  exports.updatePeriod= (async(req, res)=>{    
+  exports.updateAppointment= (async(req, res)=>{    
       
-   //console.log(req.files);
-      //if image is not changed,old img jo save garna paryo
-      if(req.files){
-          
-          req.body.image= req.files.image.name;
-      }
    
-      try{
-          const updatedPeriod = await Routine.findByIdAndUpdate(req.params.id , req.body,{
-                  new:true,
-                  runValidator:true
-              
-          })
-         
-  
-          if(updatedPeriod)
-          {
-                  req.session.message={
-                      type:'success',
-                      message:'Period update successfully'
-              }
-              } 
-  }
-  catch(err){
       
-        
-              res.json({message:err.message , type:'danger'})
-          
-          }
-  
-    res.redirect('http://127.0.0.1:3007/api/v1/routine')
-     
-      })  
+             
+  })
   
       
  
