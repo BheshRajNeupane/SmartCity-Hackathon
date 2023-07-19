@@ -10,6 +10,14 @@
     padding:30px 80px 10px 80px;
     width:40rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.butn{
+    display:flex;
+    justify-content: space-between;
+
+}.form{
+    margin-top:10rem;
 }
 .user-text{
     text-align:center;
