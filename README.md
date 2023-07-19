@@ -4,14 +4,17 @@ To make cities smart , smart health system plays vital role.So , we are presenti
 **currently working on:**     <br>
 Authentication and authorization<br>
  sigUp,sigin <br>
-user can book an appointment with doctor
-Only doctors have access to get  all their patients
+user can book an appointment with doctor <br>
+Only doctors have access to get  all their patients <br>
  
+<br>
+<br>
+<br>
 
-
-**tech stack**
-Nodejs,moongoose,Boostrap,html,css
-**we will be working on:**
+**tech stack**<br>
+Nodejs,moongoose,Boostrap,html,css<br>
+<br>
+**we will be working on:**<br>
 Telemedicine patient can do text  to doctor and do video call
 user can get location of nearby hospitals and so on
 
