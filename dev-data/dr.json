@@ -1,0 +1,29 @@
+[
+    {
+        "_id": "5c8a1d5b0190b214360dc065",
+        "name": "Dr.Hari Bastola",
+        "email": "drharibastola@gmail.com",
+        "code": "78dr0098",
+        "active": true
+  
+
+    },
+    {
+        "_id": "5c8a1d5b0190b214360dc075",
+        "name": "Dr.Sita Bhandari",
+        "email": "drsitabhandari@gmail.com",
+        "code": "p0897010",
+        "active": true
+  
+
+    },
+    {
+        "_id": "5c8a1d5b0190b214360dc085",
+        "name": "Dr.Mukul Gurung",
+        "email": "drmukulgrung@gmail.com",
+        "code": "2307ycx0",
+        "active": true
+  
+
+    }
+]
