@@ -17,8 +17,17 @@
     justify-content: space-between;
 
 }.form{
-    margin-top:10rem;
+    /* margin-top:10rem; */
 }
 .user-text{
     text-align:center;
+}
+
+.container-fluid{
+    height: 100vh;
+    background-image: linear-gradient(to right, #27ae60, #CDDC39);
+}
+
+.mb-3{
+    color: #000;
 }
