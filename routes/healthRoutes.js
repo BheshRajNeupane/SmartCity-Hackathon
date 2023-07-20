@@ -15,11 +15,11 @@ router.post('/bookAppointment',  healthController.bookAppointment)
 
 // Geospatial Queries: Finding Hospitals Within Radius
 
-router.route('/health-within/:distance/center/:latlng/unit/:unit')
-.get(healthController.gethospitalWithin)
+// router.route('/health-within/:distance/center/:latlng/unit/:unit')
+// .get(healthController.gethospitalWithin)
 
-router.route('/distances/:latlng/unit/:unit')
-.get(healthController.getDistances)
+// router.route('/distances/:latlng/unit/:unit')
+// .get(healthController.getDistances)
 
 
 

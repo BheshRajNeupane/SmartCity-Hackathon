@@ -49,6 +49,10 @@ const userSchema = new mongoose.Schema({
          minlength:8,
          select: false 
     },
+    token:{
+         type:String,
+         
+    },
     passwordConfirm:{
         type:String,
         required:[true,'Please confirm your password'],
@@ -97,7 +101,6 @@ userSchema.pre('save',  async function(next){
   
   //--140 Deleting User-------------
   userSchema.pre('/^find/' , function(next){ 
-  //this.find({active:true})
   this.find({ active:{ $ne:false } })
   next();
   })
