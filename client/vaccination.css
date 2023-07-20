@@ -6,48 +6,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(to right, #27ae60, #CDDC39); 
 }
-<<<<<<< HEAD
-.vaccine-info{
-   padding-bottom: 20rem;
-   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-   width:80rem;
-   height: 600px;
-}
-.text{
-    text-align: center;  
-}
-.vaccine-notice{
-    padding: 20px;
-     border:1px solid #4444448e; 
-     width:40rem;
-     height:35rem;
-} 
-.notice{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    /* display:flex; */
-    /* padding-left:400px; */
-    /* padding-top: 60px; */
-}
-.date
-{
-    display: flex;
-    justify-content: space-between;
-}
-.image{
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-     width: 700px;
-    height: 200px; 
-}
-
-.image img{
-    border-radius:10px;
-    /* width:100%; */
-=======
 
 .container {
     max-width: 1200px;
@@ -57,11 +17,10 @@ body {
 
 /* Header */
 header {
-    background-color: #007bff;
-    color: #fff;
+    /* background-color: #007bff; */
+    color:black;
     text-align: center;
     padding: 10px;
->>>>>>> 91bf62fe85bdda4c0021cdb6f321009c09c00e39
 }
 
 header h1 {
@@ -81,56 +40,22 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color:black ;
     text-decoration: none;
 }
-
-/* About section */
-#about {
-    background-color: #f9f9f9;
+.notice{
+    border:3px solid black; 
+    border-radius: 5px;
+    box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.75);
+   width: auto; 
+   height: 400px;
+   
 }
-
-/* Schedule section */
-#schedule {
-    background-color: #f3f3f3;
-}
-
-/* FAQs section */
-#faqs {
-    background-color: #f9f9f9;
-}
-
-/* Contact section */
-#contact {
-    background-color: #f3f3f3;
-}
-
-/* Footer */
-footer {
-    background-color: #007bff;
-    color: #fff;
+.text{
     text-align: center;
-    padding: 10px;
+    
 }
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    /* Adjust layout for smaller screens */
-    header {
-        padding: 20px;
-    }
-    header h1 {
-        font-size: 24px;
-    }
-    nav {
-        display: block;
-        text-align: center;
-    }
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-.vaccine{
-    border: 2px solid #007bff;
+.date{
+ padding:0px 400px;
+ 
 }
