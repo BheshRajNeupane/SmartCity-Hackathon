@@ -1,6 +1,6 @@
 const registerBtn = document.getElementById("register-btn");
 
-console.log("hello")
+// console.log("hello")
 
 const register =   () =>{
     
@@ -13,6 +13,8 @@ const contactNbr = document.querySelector('#contact').value;
 const emailAdress = document.querySelector('#email').value;
 const userPassword = document.querySelector('#password').value;
 const confirmPassword = document.querySelector('#confirm-password').value;
+alert("Hello")
+
 
 const data = {
     name:fullName,
@@ -51,6 +53,7 @@ function signIN(){
     const signin_Password = document.querySelector('#password').value;
 
     console.log(signin_Email);
+
 }
 
 // signinBtn.addEventListener('click', signIN);
