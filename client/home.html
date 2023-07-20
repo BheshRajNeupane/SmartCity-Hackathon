@@ -12,7 +12,7 @@
 
   <!-- header part -->
     <header class="container-fluid header">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar  navbar-expand-lg navbar-light">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <div class="img">
@@ -37,14 +37,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Transportation</a>
                   </li>
-
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Government</a>
+                    <a class="nav-link" href="#contact-us">Conatct US</a>
                   </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Education</a>
-                  </li>
+                  
 
                   <li class="nav-item">
                     <a class="nav-link btn btn-success" href="../client/login.html">Log in</a>
@@ -63,7 +60,7 @@
          <h1>Smart City</h1>
          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt repudiandae culpa in. Ipsam excepturi qui aliquid error hic et fuga quaerat voluptas reiciendis nulla officia nihil voluptatem, eaque sint voluptatum!</p>
          <button class="btn btn-success">Use the Technology</button>
-         <button class="btn btn-danger">Emergency</button>
+        <a href="../client/emergency-page.html" class="btn btn-danger">For Emergency</a>
      </div>
     </div>
 
@@ -98,12 +95,12 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Blood Donation</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="../client/Blood-donation.html" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-4 col-md-4 col-lg-4 col-12 py-4">
+              <!-- <div class="col-sm-4 col-md-4 col-lg-4 col-12 py-4">
                 <div class="card">
                   <div class="card-body text-center">
                     <h5 class="card-title"></h5>
@@ -111,7 +108,7 @@
                     <a href="#" class="btn btn-pr imary">Go somewhere</a>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
       </div>
   </div>
@@ -157,6 +154,22 @@
 
 
             <div class="col-sm-4 col-md-4 col-lg-4 col-12">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="doctor-img">
+                    <img src="../client/photo/doctor-img.jpeg" class="rounded-circle" alt="Dcotor image">
+                  </div>
+                  <h5 class="card-title">Doctor Name</h5>
+                  <li class="list-unstyled">Consultant Cardiologist</li>
+                  <li class="list-unstyled">Email: <span>text@gmail.com</span> </li>
+                  <li class="list-unstyled">Experience: <span>More than 12 Years</span> </li>
+                  <!-- <p class=" card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                  <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Continue to Proceed</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4 col-12 py-2">
               <div class="card">
                 <div class="card-body text-center">
                   <div class="doctor-img">
@@ -227,6 +240,37 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- Contact Us section -->
+
+<div class="container-fluid bg-light" id="contact-us">
+  <div class="center-form d-flex justify-content-center align-items-center">
+  <form class="contact-us-form">
+    <h1 class="text-center py-2">Contact Us</h1>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Email Address</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Massege</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 </div>
 
 <!-- Modal Popup End -->
