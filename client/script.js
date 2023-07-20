@@ -13,6 +13,8 @@ const contactNbr = document.querySelector('#contact').value;
 const emailAdress = document.querySelector('#email').value;
 const userPassword = document.querySelector('#password').value;
 const confirmPassword = document.querySelector('#confirm-password').value;
+// alert("Hello")
+
 
 const data = {
     name:fullName,
@@ -51,13 +53,22 @@ async function signIN(){
     const signin_Email = document.querySelector('#email').value;
     const signin_Password = document.querySelector('#password').value;
 
+   
+
+
     const data = {
         
         email:signin_Email,
         password:signin_Password
+
         
     }
+<<<<<<< HEAD
         const res = await fetch("http://127.0.0.1:4500/api/v1/users/login", {
+=======
+    console.log(data);
+        const res =  fetch("http://127.0.0.1:4500/api/v1/users/login", {
+>>>>>>> c62820afd0180fae104670473fe2dd1e95222298
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -65,12 +76,21 @@ async function signIN(){
               },
            body:JSON.stringify(data)
     
+<<<<<<< HEAD
         })
         if(await res.status===200){
             window.location.href = "./appoinment.html";
         }
         
+=======
+        });
+
+
+>>>>>>> c62820afd0180fae104670473fe2dd1e95222298
     }
+        
+    
+
 
 
 // signinBtn.addEventListener('click', signIN);
