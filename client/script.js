@@ -1,6 +1,6 @@
 const registerBtn = document.getElementById("register-btn");
 
-
+console.log("hello")
 
 const register =   () =>{
     
@@ -40,6 +40,24 @@ const data = {
 }
 
 registerBtn.addEventListener("click",  register);
+
+
+// for sign in form
+
+// const signinBtn = document.querySelector('#login-btn');
+
+
+function signIN(){
+    const signin_Email = document.querySelector('#email').value;
+    const signin_Password = document.querySelector('#password').value;
+
+    console.log(signin_Email);
+}
+
+// signinBtn.addEventListener('click', signIN);
+    
+
+
 
 
 
