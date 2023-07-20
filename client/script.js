@@ -49,7 +49,7 @@ registerBtn.addEventListener("click",  register);
 // const signinBtn = document.querySelector('#login-btn');
 
 
-function signIN(){
+async function signIN(){
     const signin_Email = document.querySelector('#email').value;
     const signin_Password = document.querySelector('#password').value;
 
@@ -63,18 +63,30 @@ function signIN(){
 
         
     }
+<<<<<<< HEAD
+        const res = await fetch("http://127.0.0.1:4500/api/v1/users/login", {
+=======
     console.log(data);
         const res =  fetch("http://127.0.0.1:4500/api/v1/users/login", {
+>>>>>>> c62820afd0180fae104670473fe2dd1e95222298
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
-               
+                
               },
            body:JSON.stringify(data)
     
+<<<<<<< HEAD
+        })
+        if(await res.status===200){
+            window.location.href = "./appoinment.html";
+        }
+        
+=======
         });
 
 
+>>>>>>> c62820afd0180fae104670473fe2dd1e95222298
     }
         
     
@@ -83,6 +95,43 @@ function signIN(){
 
 // signinBtn.addEventListener('click', signIN);
     
+
+
+
+
+// For Appoinment form select the input value
+
+function appoinment(){
+    
+const fullName = document.querySelector('#Full-Name').value;
+const phoneNumber = document.querySelector('#Phone-Number').value;
+const emailAddress = document.querySelector('#Email-Address').value;
+const serviceTitle = document.querySelector('#Services-Title').value;
+const doctorCode = document.querySelector('#Doctor-Code').value; 
+
+console.log(fullName);
+
+// const data = {
+        
+//     email:signin_Email,
+//     password:signin_Password
+    
+// }
+//     const res = await fetch("http://127.0.0.1:4500/api/v1/users/login", {
+//         method: 'POST',
+//         headers: {
+//             "Content-Type": "application/json",
+           
+//           },
+//        body:JSON.stringify(data)
+
+//     })
+//     if(await res.status===200){
+//         window.location.href = "./appoinment.html";
+//     }
+    
+}
+
 
 
 
