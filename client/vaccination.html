@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaccination Information</title>
-    <link rel="stylesheet" href="vaccination.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="vaccination.css">
+
 </head>
 <body>
 
-    <div class="container">
-        <div class="vaccine-info text-center">
-        <h1 class="text py-4">Upcoming Vaccine Information</h1>
-        <div class="notice">
-        <div class="vaccine-notice">
+    <div class="container-fluid">
+        <div class="vaccine-info text-center py-2">
+        <h1 class="text container-fluid">Upcoming Vaccine Information</h1>
+      </div>
+        <div class="notice d-flex justify-content-center align-items-center">
+        <div class="vaccine-notice text-center">
             <p class="text-center fs-5 mb-5 text-capitalize">The polio Vaccination is going to be conducted under the survilience of nepal government for children under age 5 years.</p>
             
-            <div class="date px-4 text-capitalize">
-            <p>Starts From:2080/03/27</p>
-            <p>ends on:2080/03/31</p></div>
-            <p class="my-5">Location:Your Nearby Healthpost</p>
+            <div class="date px-4 text-capitalize fs-5">
+            <p>Starts From: 2080/03/27</p>
+            <p>ends on: 2080/03/31</p></div>
+            <p class="my-3 fs-5">Location: Your Near By Healthpost</p>
            <div class="image img-fluid">
-            <img src="../client/photo/polio.jpg" alt="">
+            <img src="../client/photo/polio.jpg" alt="polio image">
           </div>
            
           
@@ -31,43 +33,46 @@
        </div>
        <div class="text text-capitalize my-5">
        <h1 class="text-center">world vaccination day 10th november</h1>
-        <h2>why to get vaccinate?</h2>
+        <h2 class="text-center py-2">why to get vaccinate?</h2>
 
-        <p>A vaccine is a biological preparation that provides active acquired immunity to a particular infectious or malignant disease.The safety and effectiveness of vaccines has been widely studied and verified. A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its surface proteins. The agent stimulates the body's immune system to recognize the agent as a threat, destroy it, and to further recognize and destroy any of the microorganisms associated with that agent that it may encounter in the future.</p>
-        <h1>List of Vaccine</h1>
+        <p class="text-center">A vaccine is a biological preparation that provides active acquired immunity to a particular infectious or malignant disease.The safety and effectiveness of vaccines has been widely studied and verified. A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its surface proteins. The agent stimulates the body's immune system to recognize the agent as a threat, destroy it, and to further recognize and destroy any of the microorganisms associated with that agent that it may encounter in the future.</p>
+        <h1 class="text-center">List of Vaccine</h1>
       </div>
         
+      <div class="table text-center my-5">
           <table class="table">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Vaccine</th>
+                <th scope="col">Age</th>
+                <th scope="col">Benefits</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>DPT</td>
+                <td>at birth</td>
+                <td>Prevents from diptheria</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>tetanus</td>
+                <td>at birth</td>
+                <td>prevents from clostridium tetani</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td colspan="1">Larry</td>
-                <td>@twitter</td>
+                <td colspan="1">Polio</td>
+                <td>at birth</td>
+                <td>prevents from polio virus</td>
               </tr>
             </tbody>
           </table>
-   
         </div>
+   
+        
     </div>
         </body>
         </html>
