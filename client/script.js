@@ -69,6 +69,7 @@ async function signIN(){
                 "Content-Type": "application/json",
                 
               },
+              console.log(data);
            body:JSON.stringify(data)
     
         })
