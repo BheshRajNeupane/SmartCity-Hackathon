@@ -45,14 +45,6 @@ exports.bookAppointment= catchAsync(async(req,res,next)=>{
 
 
 
-// exports.updateAppointment= async(req, res)=>{
-
-        
-//            const appoinment =  await Appoinment.findById(req.params.id)  ;
-
-
-//                 } 
-
 exports.getallAppointments= catchAsync(async(req, res)=>{
 let newPatients=[] ,j=0;
 let patientDetails =  await Appoinment.find();
@@ -79,8 +71,34 @@ let patientDetails =  await Appoinment.find();
        
   
   
-  exports.updateAppointment= (async(req, res)=>{    
-      
+  exports.gethospitalWithin= catchAsync(async(req, res)=>{    
+    const {distance, latlng , unit}   = req.params;
+    const [lat,lng]= latlng.split(',');
+   
+ 
+    
+    const radius =  unit === 'mi'? distance/3963.2:distance/6378.1;
+  
+    if(!lat || !lng){
+        next( new AppError('Please provide latitute and longitude in the format lat,log',400))
+    }
+// console.log("distance:",distance,"lat:",lat,"lng:",lng , "unit:",unit);
+
+
+const hospital = await Hospitals.find({
+   Location:{$geoWithin: {$centerSphere:[[lng,lat],radius]}}
+})
+
+// tourSchema.index({startLocation:'2dsphere'})
+
+
+    res.status(200).json({
+       status:'success',
+       result:tours.length,
+       data:{
+         tours
+       }
+   })    
    
       
              

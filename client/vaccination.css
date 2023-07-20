@@ -9,11 +9,14 @@ body {
     background-image: linear-gradient(to right, #27ae60, #CDDC39); 
 }
 
+<<<<<<< HEAD
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+=======
+>>>>>>> 0714b33bc07f085144a0b85278e5a6a1a5300bc6
 
 /* Header */
 header {

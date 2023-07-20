@@ -19,16 +19,7 @@ module.exports = class Email{
   }
 
   newTransport(){
-      // if(process.env.NODE_ENV === 'production'){
-      //    //Sendgrid
-      //     return nodemailer.createTransport({
-      //       service:'SendGrid',
-      //       auth:{
-      //         user:process.env.SENDGRID_USERNAME,
-      //         pass:process.env.SENDGRID_PASSWORD
-      //      }
-      //    })
-      // }
+    
 
       //development mode ;test on mailptrap using nodemailer
     return nodemailer.createTransport({
@@ -48,7 +39,7 @@ module.exports = class Email{
    send(template , subject) {
   
       //1) Render HTML based templates
-          console.log(template)
+         
        
        ejs.renderFile(__dirname+`../views/email/${template}.ejs `, 
          {

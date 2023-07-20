@@ -1,0 +1,82 @@
+[
+    {
+        "_id": "5c8a1d5b0190b214360dc090",
+        "name": "Civil Hospital ",
+        "locations":[
+            {
+                "_id": "5c88fa8cf4afda39709c2959",
+                
+                "type": "Point",
+                "coordinates": [ 25.781842,-80.128473] ,
+                "address":"Baneshwor"
+                 
+                
+                }
+                ],
+       
+        "email": "civillhospital@gmail.com",
+        "contact":"01673002",
+        "descriptions":"Civil hospital is the hospital for  employee of nepal government .It is supported by the peoples republic of china(PRC).It is 132 bedded and fully equiped with medical equipment and surgical services. "
+    
+    },
+    {
+        "_id": "5c8a1d5b0190b214360dc091",
+        "name": "Bir Hospital ",
+        "locations":[
+            {
+                "_id": "5c88fa8cf4afda39709c2959",
+                
+                "type": "Point",
+                "coordinates": [ 85.3137,27.7048] ,
+                "address":"Sundhara"
+                 
+                
+                }
+                ],
+        "email": "birhospital@gmail.com",
+        "contact":"014903002",
+        "descriptions":"Bir hospital is the hospital for  employee of nepal government .It is 132 bedded and fully equiped with medical equipment and surgical services. "
+    
+    },
+    {
+        "_id": "5c8a1d5b0190b214360dc093",
+        "name": "Patan Hospital ",
+        "locations":[
+            {
+                "_id": "5c88fa8cf4afda39709c2959",
+                
+                "type": "Point",
+                "coordinates": [ 85.3206,27.6683] ,
+                "address":"LaganKhel"
+                 
+                
+                }
+                ],
+        
+        "email": "patanhospital@gmail.com",
+        "contact":"014793002",
+        "descriptions":"Patan hospital is the hospital for  employee of nepal government .It is 132 bedded and fully equiped with medical equipment and surgical services. "
+    
+    },{
+        "_id": "5c8a1d5b0190b214360dc095",
+        "name": "Teaching Hospital ",
+        "locations":[
+            {
+                "_id": "5c88fa8cf4afda39709c2959",
+                
+                "type": "Point",
+                "coordinates": [85.3303,27.7360] ,
+                "address":"Maharajgunj"
+                 
+                
+                }
+                ],
+        
+       
+        "email": "teachinghospital@gmail.com",
+        "contact":"014793002",
+        "descriptions":"Teaching hospital is the hospital for  employee of nepal government It is 132 bedded and fully equiped with medical equipment and surgical services. "
+    
+    }
+
+]

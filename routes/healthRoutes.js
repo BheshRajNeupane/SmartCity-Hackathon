@@ -13,5 +13,15 @@ router.post('/bookAppointment',  healthController.bookAppointment)
  router.get('/allAppointments',authController.isDoctor, healthController.getallAppointments)
 // router.get('/deleteAppointment/:id',  healthController.deleteAppointment);
 
+// Geospatial Queries: Finding Hospitals Within Radius
+
+// router.route('/health-within/:distance/center/:latlng/unit/:unit')
+// .get(healthController.gethospitalWithin)
+
+// router.route('/distances/:latlng/unit/:unit')
+// .get(healthController.getDistances)
+
+
+
 
 module.exports= router;

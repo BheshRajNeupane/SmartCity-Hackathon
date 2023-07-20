@@ -3,6 +3,7 @@
 const fs = require('fs')
 const mongoose = require('mongoose');//
  const Doctor = require('../Models/doctorModel')
+ const Hospital = require('../Models/hospitalModel')
 
  const User = require('../Models/userModel')
 const dotenv = require('dotenv')// i 
@@ -22,13 +23,16 @@ mongoose
     console.log("DB connection successful!");
 });
 //READ JSON FILE
-const doctors =  JSON.parse(fs.readFileSync(`${__dirname}/dr.json`,'utf-8'));
+// const doctors =  JSON.parse(fs.readFileSync(`${__dirname}/dr.json`,'utf-8'));
+const hospitals =  JSON.parse(fs.readFileSync(`${__dirname}/hospital.json`,'utf-8'));
 
 //IMPORT DATA INTO DB
 const importData = async ()=>{
 
     try{
-          await Doctor.create(doctors);
+          //await Doctor.create(doctors);
+          await Hospital.create(hospitals);
+         
          
           console.log("Data successfull loaded");
       }
@@ -41,7 +45,8 @@ const importData = async ()=>{
 //Delete all data from database
 const deleteData = async ()=>{
      try{ 
-         await Doctor.deleteMany();
+        // await Doctor.deleteMany();
+         await Hospital.deleteMany();
          console.log("Data successfull deleted!");
         }catch(err){
             console.log(err);
