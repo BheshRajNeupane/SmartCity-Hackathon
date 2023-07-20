@@ -63,12 +63,7 @@ async function signIN(){
 
         
     }
-<<<<<<< HEAD
         const res = await fetch("http://127.0.0.1:4500/api/v1/users/login", {
-=======
-    console.log(data);
-        const res =  fetch("http://127.0.0.1:4500/api/v1/users/login", {
->>>>>>> c62820afd0180fae104670473fe2dd1e95222298
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -76,17 +71,11 @@ async function signIN(){
               },
            body:JSON.stringify(data)
     
-<<<<<<< HEAD
         })
         if(await res.status===200){
-            window.location.href = "./appoinment.html";
+            window.location.href = "./health.html";
         }
         
-=======
-        });
-
-
->>>>>>> c62820afd0180fae104670473fe2dd1e95222298
     }
         
     
@@ -108,29 +97,31 @@ const phoneNumber = document.querySelector('#Phone-Number').value;
 const emailAddress = document.querySelector('#Email-Address').value;
 const serviceTitle = document.querySelector('#Services-Title').value;
 const doctorCode = document.querySelector('#Doctor-Code').value; 
+const message = document.querySelector('#Msg-Box').value; 
 
 console.log(fullName);
 
-// const data = {
-        
-//     email:signin_Email,
-//     password:signin_Password
-    
-// }
-//     const res = await fetch("http://127.0.0.1:4500/api/v1/users/login", {
-//         method: 'POST',
-//         headers: {
-//             "Content-Type": "application/json",
-           
-//           },
-//        body:JSON.stringify(data)
-
-//     })
-//     if(await res.status===200){
-//         window.location.href = "./appoinment.html";
-//     }
-    
+const data = {
+        name:fullName,
+        phone:phoneNumber,
+    email:emailAddress,
+    serviceTitle:serviceTitle,
+    octor_code:doctorCode,
+    message:message
 }
+    const res = await fetch("http://127.0.0.1:4500/api/v1/health/bookAppointment", {
+       method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+           
+          },
+       body:JSON.stringify(data)
+
+    })
+    if(await res.status===200){
+        window.location.href = "./home.html";
+    }
+     }
 
 
 
