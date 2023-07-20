@@ -90,8 +90,7 @@ module.exports = class Email{
          await  this.send('welcome' , 'WELCOME TO SMART CITY ..THANK YOU FOR JOINING WITH US!')
        }
       async sendaAppoinmentMail(){
-         //send(template , subject)
-         //welcome-->tempalte which created
+         
          await  this.send('appoinment' , 'Your appoinment is booked!')
        }
       async sendPasswordReset(){
