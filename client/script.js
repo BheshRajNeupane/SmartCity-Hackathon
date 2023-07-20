@@ -35,6 +35,7 @@ const data = {
        body:JSON.stringify(data)
 
     })
+    console.log(response.json());
     //return response.json();
 }
 

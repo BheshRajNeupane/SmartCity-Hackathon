@@ -55,7 +55,10 @@ const Email = require('./../utils/email');
     const user = await User.findOne({ email});
 
    if(user){
-      // res.render().
+      res.status(400).json({
+        message:"Email already exist"
+      })
+
    }
 
     const newUser = await User.create(req.body);
