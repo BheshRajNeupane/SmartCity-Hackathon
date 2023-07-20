@@ -7,53 +7,7 @@ body {
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-.vaccine-info{
-   padding-bottom: 20rem;
-   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-   width:80rem;
-   height: 600px;
-}
-.text{
-    text-align: center;  
-}
-.vaccine-notice{
-    padding: 20px;
-     border:1px solid #4444448e; 
-     width:40rem;
-     height:35rem;
-} 
-.notice{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    /* display:flex; */
-    /* padding-left:400px; */
-    /* padding-top: 60px; */
-}
-.date
-{
-    display: flex;
-    justify-content: space-between;
-}
-.image{
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-     width: 700px;
-    height: 200px; 
-}
 
-.image img{
-    border-radius:10px;
-    /* width:100%; */
-=======
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 /* Header */
 header {
@@ -61,7 +15,6 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px;
->>>>>>> 91bf62fe85bdda4c0021cdb6f321009c09c00e39
 }
 
 header h1 {
