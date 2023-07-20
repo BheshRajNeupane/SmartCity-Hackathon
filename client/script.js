@@ -13,7 +13,7 @@ const contactNbr = document.querySelector('#contact').value;
 const emailAdress = document.querySelector('#email').value;
 const userPassword = document.querySelector('#password').value;
 const confirmPassword = document.querySelector('#confirm-password').value;
-alert("Hello")
+// alert("Hello")
 
 
 const data = {
@@ -37,6 +37,7 @@ const data = {
        body:JSON.stringify(data)
 
     })
+    console.log(response.json());
     //return response.json();
 }
 
@@ -52,9 +53,31 @@ function signIN(){
     const signin_Email = document.querySelector('#email').value;
     const signin_Password = document.querySelector('#password').value;
 
-    console.log(signin_Email);
+   
 
-}
+
+    const data = {
+        
+        email:signin_Email,
+        password:signin_Password
+        
+    }
+        const res =  fetch("http://127.0.0.1:4500/api/v1/users/login", {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+               
+              },
+           body:JSON.stringify(data)
+    
+        });
+
+
+    }
+        
+    
+
+
 
 // signinBtn.addEventListener('click', signIN);
     

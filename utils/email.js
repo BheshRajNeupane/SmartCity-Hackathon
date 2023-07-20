@@ -39,7 +39,7 @@ module.exports = class Email{
    send(template , subject) {
   
       //1) Render HTML based templates
-          console.log(template)
+         
        
        ejs.renderFile(__dirname+`../views/email/${template}.ejs `, 
          {
