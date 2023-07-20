@@ -69,7 +69,6 @@ async function signIN(){
                 "Content-Type": "application/json",
                 
               },
-              console.log(data);
            body:JSON.stringify(data)
     
         })
@@ -91,7 +90,7 @@ async function signIN(){
 
 // For Appoinment form select the input value
 
-function appoinment(){
+async function appoinment(){
     
 const fullName = document.querySelector('#Full-Name').value;
 const phoneNumber = document.querySelector('#Phone-Number').value;
