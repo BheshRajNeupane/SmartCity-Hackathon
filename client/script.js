@@ -60,8 +60,10 @@ function signIN(){
         
         email:signin_Email,
         password:signin_Password
+
         
     }
+    console.log(data);
         const res =  fetch("http://127.0.0.1:4500/api/v1/users/login", {
             method: 'POST',
             headers: {
